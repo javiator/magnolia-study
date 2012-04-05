@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>magnolia-study</artifactId>
+		<groupId>com.firstclarity.magnolia.study</groupId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<groupId>com.firstclarity.magnolia.study.blossom</groupId>
+	<artifactId>mgnl-blossom-sample-module</artifactId>
+
+	<name>A custom Magnolia module</name>
+	<url>http://www.myorganization.org</url>
+	<dependencies>
+		<dependency>
+			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-core</artifactId>
+			<version>${magnolia.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-module-admininterface</artifactId>
+			<version>${magnolia.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-module-fckeditor</artifactId>
+			<version>${magnolia.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-module-blossom</artifactId>
+			<version>${blossomVersion}</version>
+		</dependency>
+	</dependencies>
+	<repositories>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>magnolia</id>
+			<url>http://svn.magnolia.info/maven/m2</url>
+		</repository>
+	</repositories>
+</project>
