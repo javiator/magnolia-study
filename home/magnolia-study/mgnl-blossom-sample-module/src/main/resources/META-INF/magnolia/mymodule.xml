@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+  <name>mymodule</name>
+  <displayName>Sample Magnolia module : mgnl-blossom-sample-module</displayName>
+  <class>com.firstclarity.magnolia.study.blossom.sample.MyModule</class>
+  <versionHandler>com.firstclarity.magnolia.study.blossom.sample.MyModuleVersionHandler</versionHandler>
+  <version>1.0.0-SNAPSHOT</version>
+  
+  <dependencies>
+    <dependency>
+      <name>core</name>
+      <version>4.1/*</version>
+    </dependency>
+    <dependency>
+      <name>adminInterface</name>
+      <version>4.1/*</version>
+    </dependency>
+    <dependency>
+      <name>templating</name>
+      <version>4.1/*</version>
+    </dependency>
+    <dependency>
+      <name>fckEditor</name>
+      <version>4.1/*</version>
+    </dependency>
+    <dependency>
+      <name>blossom</name>
+      <version>2.0/*</version>
+    </dependency>
+  </dependencies>
+</module>
