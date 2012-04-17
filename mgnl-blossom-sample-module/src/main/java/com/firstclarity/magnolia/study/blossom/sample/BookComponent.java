@@ -50,6 +50,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.firstclarity.magnolia.study.blossom.sample.ajax.DynamicComponentUtil;
+import com.firstclarity.magnolia.study.blossom.sample.filters.DynamicComponentsFilter;
 import com.firstclarity.magnolia.study.blossom.sample.service.Book;
 import com.firstclarity.magnolia.study.blossom.sample.service.SalesApplicationWebService;
 
@@ -67,6 +69,12 @@ public class BookComponent {
 
     @RequestMapping("/book")
     public String handleRequest(ModelMap model, HttpSession session, HttpServletRequest request, Content content) {
+    	
+    	model.addAttribute(DynamicComponentUtil.VIEW_NAME_PARAM, "mymodule/components/book.jsp");
+    	
+		if(null == request.getParameter(DynamicComponentUtil.DYNAMIC_COMPONENT_LOAD_PARAMETER)){			
+			return DynamicComponentUtil.DYNAMIC_COMPONENT_VIEW;
+		}
 
         String articleCode = content.getNodeData("articleCode").getString();
 
@@ -80,10 +88,9 @@ public class BookComponent {
 
             return "redirect:" + request.getRequestURL();
         }
-
+                
         model.put("book", book);
-
-        return "mymodule/components/book.jsp";
+        return DynamicComponentUtil.DYNAMIC_COMPONENT_VIEW;
     }
 
     @TabFactory("Content")

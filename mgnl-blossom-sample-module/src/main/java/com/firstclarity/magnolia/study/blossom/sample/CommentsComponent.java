@@ -53,6 +53,8 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.firstclarity.magnolia.study.blossom.sample.filters.DynamicComponentsFilter;
+
 /**
  * A comment component for letting visitors leave feedback.
  * <p/>
@@ -77,7 +79,7 @@ public class CommentsComponent {
         }
 
         model.addAttribute("comments", readComments(content));
-        return "mymodule/components/comments.jsp";
+        return "mymodule/components/comments.jsp";        
     }
 
     private List<Comment> readComments(Content websiteNode) throws RepositoryException {
