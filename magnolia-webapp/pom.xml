@@ -66,7 +66,7 @@
 
 
 		
-		<!-- Magnolia STK related dependencies -->
+		<!-- Magnolia STK related dependencies 
 		<dependency>
 			<groupId>info.magnolia</groupId>
 			<artifactId>magnolia-module-google-sitemap</artifactId>
@@ -112,7 +112,7 @@
 			<artifactId>magnolia-module-forum</artifactId>
 			<version>1.3.1</version>
 		</dependency>
-		
+		-->
 
 		<dependency>
 			<groupId>info.magnolia</groupId>
