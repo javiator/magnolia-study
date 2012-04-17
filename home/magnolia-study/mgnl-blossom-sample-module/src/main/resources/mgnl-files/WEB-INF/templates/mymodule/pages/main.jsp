@@ -45,7 +45,7 @@
 
         <div id="content">
 
-        <cms:area name="main" components="mymodule:components/text,mymodule:components/book,mymodule:components/tour,mymodule:components/comments,mymodule:components/shoppingCartView,mymodule:components/purchase,mymodule:components/contactForm" />
+        <cms:area name="main" components="mymodule:components/ajaxText,mymodule:components/text,mymodule:components/book,mymodule:components/tour,mymodule:components/comments,mymodule:components/shoppingCartView,mymodule:components/purchase,mymodule:components/contactForm" />
 
         <cms:area name="promos" />
 

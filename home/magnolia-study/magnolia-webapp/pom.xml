@@ -48,6 +48,27 @@
 		</dependency>
 		<dependency>
 			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-module-inplace-templating</artifactId>
+			<version>1.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-module-resources</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-module-scheduler</artifactId>
+			<version>1.5.1</version>
+		</dependency>
+
+
+
+		
+		<!-- Magnolia STK related dependencies -->
+		<dependency>
+			<groupId>info.magnolia</groupId>
 			<artifactId>magnolia-module-google-sitemap</artifactId>
 			<version>1.1</version>
 			<exclusions>
@@ -61,39 +82,9 @@
 		</dependency>
 		<dependency>
 			<groupId>info.magnolia</groupId>
-			<artifactId>magnolia-module-inplace-templating</artifactId>
-			<version>1.3</version>
-		</dependency>
-		<dependency>
-			<groupId>info.magnolia</groupId>
-			<artifactId>magnolia-module-public-user-registration</artifactId>
-			<version>1.4.1</version>
-		</dependency>
-		<dependency>
-			<groupId>info.magnolia</groupId>
-			<artifactId>magnolia-module-resources</artifactId>
-			<version>1.5.2</version>
-		</dependency>
-		<dependency>
-			<groupId>info.magnolia</groupId>
-			<artifactId>magnolia-module-rssaggregator</artifactId>
-			<version>1.3.1</version>
-		</dependency>
-		<dependency>
-			<groupId>info.magnolia</groupId>
-			<artifactId>magnolia-module-scheduler</artifactId>
-			<version>1.5.1</version>
-		</dependency>
-		<dependency>
-			<groupId>info.magnolia</groupId>
 			<artifactId>magnolia-standard-templating-kit-bundle</artifactId>
 			<version>2.0.2</version>
 			<type>zip</type>
-		</dependency>
-		<dependency>
-			<groupId>info.magnolia</groupId>
-			<artifactId>magnolia-module-categorization</artifactId>
-			<version>1.2.1</version>
 		</dependency>
 		<dependency>
 			<groupId>info.magnolia</groupId>
@@ -102,9 +93,26 @@
 		</dependency>
 		<dependency>
 			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-module-categorization</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-module-rssaggregator</artifactId>
+			<version>1.3.1</version>
+		</dependency>	
+		<dependency>
+			<groupId>info.magnolia</groupId>
+			<artifactId>magnolia-module-public-user-registration</artifactId>
+			<version>1.4.1</version>
+		</dependency>	
+		<dependency>
+			<groupId>info.magnolia</groupId>
 			<artifactId>magnolia-module-forum</artifactId>
 			<version>1.3.1</version>
 		</dependency>
+		
 
 		<dependency>
 			<groupId>info.magnolia</groupId>
@@ -153,6 +161,7 @@
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
+				<version>7.1.4.v20100610</version>
 				<configuration>
 					<webAppConfig>
 						<contextPath>/mgnl</contextPath>
